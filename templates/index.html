@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en-us" class="dark-mode">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Prediction</title>
+        <script src="../static/darkmode.js"></script>
+        <link rel="stylesheet" href="../static/style2.css">
+        <link rel="stylesheet" href="../static/newsStyle.css">
+        </head>
+    <body>
+        <div class="dark-mode-toggle" id="dark-mode-toggle">
+            <img type="dark" src="../images/darkmode.png">
+            <img type="light" src="../images/lightmode.webp">
+            <div></div>
+        </div>
+
+        <div class="top-panel">
+            <h1 class="title large-title">Stock Prediction</h1>
+            <hr width="50%">
+        </div>
+
+        
+        <div id="news-popup" class="news-popup hidden">
+            <div id="news-popup-frame" class="holder news-popup-frame">
+                <h3 id="news-popup-title"></h3>
+                <p id="news-popup-description"></p>
+                <div id="popup-sentiment-bar" class="news-element-bar">
+                    <div id="popup-sentiment-bar-inner" class="positive"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="left-panel">
+            <div class="top-inputs">
+                <input class = "text-box" id="stock-symbol-input" type="text" placeholder="Stock Symbol">
+                <br/>
+                <button type="submit" id="load-stock" class="button submit-button half-center">Load Stock</button>
+            </div>
+            <div class="holder news-holder">
+                <button id="news-refresh" width="25px" class="button news-refresh"><img src="../images/refresh.png"></button>
+                <h3 class="title">Most Recent News</h3>
+                <hr width="80%">
+                <br/>
+                <div id="news-holder" class="news-scrolling">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="center-panel">
+            <p class="title title-left" id="stock-symbol-display">Stock: None</p>
+            <canvas id="stock-display" class="graph stock-display" height="1000px" width="2000px"></canvas>
+            <canvas id="interactive-display" class="graph interactive-display" height="1000px" width="2000px"></canvas>
+            <div id="graph-overlay" class="graph display-overlay">
+                <div class="loader"></div>
+                <br/>
+                <div class="loadingBar" id="loadingBarHolder">
+                    <div id = "loadingBar">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-panel">
+            <p class="title title-left">Prediction Algorithms</p>
+            
+            <div class="stock-algorithm-holder">
+                <div class="holder stock-algorithm">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="stock-algorithm-select" algorithm="RANDOMFOREST">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Random Forest</p>
+                </div>
+                <div class="holder stock-algorithm">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="stock-algorithm-select" algorithm="SVMMODEL">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>SVM</p>
+                </div>
+                <div class="holder stock-algorithm">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="stock-algorithm-select" algorithm="LINEARREGRESSION">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Linear Regression</p>
+                </div>
+            </div>
+        </div>
+        <script src="../static/script2.js"></script>
+    </body>    
+</html>

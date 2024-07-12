@@ -1,0 +1,70 @@
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stock info styles */
+.stock-info {
+    margin-bottom: 40px;
+}
+
+.stock-input {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* News styles */
+.news {
+    margin-bottom: 40px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-item h3 {
+    margin-bottom: 5px;
+}
+
+/* Stock chart styles */
+.stock-chart {
+    margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
