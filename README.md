@@ -12,7 +12,6 @@ This repository provides a Python-based approach to predict stock prices using v
 - [Usage](#usage)
 - [License](#license)
 
-
 ## Methodology
 
 The methodology for predicting stock prices using machine learning involves several critical steps, from data collection and preprocessing to model training and evaluation. This approach is informed by the methodologies presented in the following research papers:
@@ -73,6 +72,8 @@ The models are evaluated using metrics such as:
 - HyperTuning Parameters using a Grid Search to find optimal parameters
 
   ## Usage
+
+If you want **News.py** You have to create your APIKEY here [grabAPIKEY](https://newsapi.org)
 
 To train and evaluate the models, follow these steps:
 
