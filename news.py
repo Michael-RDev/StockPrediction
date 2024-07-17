@@ -3,7 +3,7 @@ from textblob import TextBlob
 
 
 def get_news_sentiment(company):
-    API_KEY = "12923f4611384ae4abb6f48bbc54067a"
+    API_KEY = ""
     query = f"{company} Stock"
     url = f"https://newsapi.org/v2/everything?q={query}&apiKey={API_KEY}"
 
